@@ -1,0 +1,34 @@
+{
+  "name": "cathy/thinkphp6-async-task",
+  "description": "基于workerman的thinkphp6异步任务模型",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.2.5",
+    "topthink/framework": "^6.0.0",
+    "topthink/think-worker": "^3.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "cathy\\AsyncTask\\": "src/"
+    }
+  },
+  "extra": {
+    "think":{
+      "services":[
+        "cathy\\AsyncTask\\Service"
+      ],
+      "config":{
+        "worker_task": "src/config/config.php"
+      }
+    }
+  },
+  "authors": [
+    {
+      "name": "cathy",
+      "email": "1574829575@qq.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
