@@ -1,5 +1,5 @@
 <?php
-namespace AsyncTask;
+namespace cathy\AsyncTask;
 use think\Service as BaseService;
 
 class Service extends BaseService{
