@@ -6,7 +6,6 @@ use think\console\Command;
 use think\console\Input;
 use think\console\input\Argument;
 use think\console\Output;
-use think\facade\Cache;
 use think\facade\Config;
 use Workerman\Worker;
 use function app;

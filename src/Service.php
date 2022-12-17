@@ -5,7 +5,7 @@ use think\Service as BaseService;
 class Service extends BaseService {
     public function register(){
         $this->commands([
-            'worker:task'=>'\\Cathy\\AsyncTask\\command\\AsyncTaskService',
+            'worker:task'=>'\\cathy\\AsyncTask\\command\\AsyncTaskService',
         ]);
     }
 }

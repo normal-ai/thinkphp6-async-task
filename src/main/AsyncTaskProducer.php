@@ -1,7 +1,6 @@
 <?php
 namespace cathy\AsyncTask\main;
 use cathy\AsyncTask\exception\ExecAsyncTaskException;
-use function app;
 
 /**
  * 异步任务提供器
