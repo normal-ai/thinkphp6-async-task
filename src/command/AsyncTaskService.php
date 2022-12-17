@@ -93,7 +93,7 @@ class AsyncTaskService extends Command
             $taskSynchronizer = new AsyncTaskSynchronizer($taskKey, $option['synchronizer_ttl']);
             try{
                 $class = is_object($taskClass) ?: app($taskClass);
-                $class->$taskMethod($taskData);
+                $class->$taskMethod($taskData, $taskSynchronizer);
             }catch (Exception $e){
                 $taskSynchronizer->error($e->getMessage());
             }
