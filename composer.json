@@ -7,7 +7,9 @@
     "php": ">=7.2.5",
     "topthink/framework": "^6.0.0",
     "topthink/think-worker": "^3.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-posix": "*",
+    "ext-pcntl": "*"
   },
   "autoload": {
     "psr-4": {
