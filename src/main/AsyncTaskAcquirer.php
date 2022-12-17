@@ -15,7 +15,7 @@ class AsyncTaskAcquirer
      */
     public static function get($taskKey) {
         $taskKey = 'async_task_'.$taskKey;
-        if (Cache::has($taskKey)) {
+        if (!Cache::has($taskKey)) {
             throw new Exception('任务不存在');
         }
         return Cache::get($taskKey);
