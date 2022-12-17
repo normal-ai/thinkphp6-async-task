@@ -99,6 +99,6 @@ class AsyncTaskService extends Command
             }
             $connection->close();
         };
-        $task_worker->run();
+        Worker::runAll();
     }
 }
