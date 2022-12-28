@@ -27,9 +27,10 @@ class AsyncTaskSynchronizer
 
     public function toArray() {
         return [
-            'done'=>$this->done,
-            'progress'=>$this->progress,
-            'data'=>$this->data
+            'done'      =>$this->done,
+            'progress'  =>$this->progress,
+            'data'      =>$this->data,
+            'errorMsg'  =>$this->errorMsg
         ];
     }
 
