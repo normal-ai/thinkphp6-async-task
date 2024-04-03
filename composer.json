@@ -19,8 +19,7 @@
         "cathy\\AsyncTask\\Service"
       ],
       "config":{
-        "worker_task": "src/config/config.php",
-        "worker_websocket": "src/config/websocket.php"
+        "worker_task": "src/config/config.php"
       }
     }
   },
