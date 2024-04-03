@@ -101,6 +101,7 @@ class AsyncTaskService extends Command
         if(isset($option['daemon']) && $option['daemon']){
             Worker::$daemonize = true;
         }
+        Worker::$pidFile = app()->getRootPath().'AsyncTask.pid';
         $task_worker = new Worker('tcp://'.$host.':'.$port);
         $task_worker->count = $option['count']; // 进程数
         $task_worker->name = $option['name']; // 名称
